@@ -19,7 +19,7 @@ export function ProjectGallery({ images, title }: ProjectGalleryProps) {
                     src={activeImage}
                     alt={`Screenshot of ${title}`}
                     fill
-                    className="object-cover"
+                    className={`object-contain ${activeImage.endsWith('.svg') ? "p-32" : ""}`}
                     priority
                 />
             </div>

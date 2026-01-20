@@ -24,8 +24,8 @@ export function Hero() {
                     Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">André</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-lg text-slate-400 md:text-xl">
-                    Full Stack Developer specializing in building exceptional digital experiences.
-                    I transform complex problems into elegant, scalable solutions.
+                    Software Engineer specializing in robust backend systems and AI integration.
+                    I engineer scalable infrastructure and intelligent solutions for complex problems.
                 </p>
             </motion.div>
 
@@ -53,11 +53,11 @@ export function Hero() {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="mt-12 flex gap-6"
             >
-                <Link href="https://github.com/yourusername" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+                <Link href="https://github.com/Andalexskywalker" target="_blank" className="text-slate-400 hover:text-white transition-colors">
                     <Github className="h-6 w-6" />
                     <span className="sr-only">GitHub</span>
                 </Link>
-                <Link href="https://linkedin.com/in/yourusername" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+                <Link href="https://www.linkedin.com/in/andr%C3%A9-ramos-a7b3412a2/" target="_blank" className="text-slate-400 hover:text-white transition-colors">
                     <Linkedin className="h-6 w-6" />
                     <span className="sr-only">LinkedIn</span>
                 </Link>

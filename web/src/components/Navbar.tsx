@@ -34,10 +34,10 @@ export function Navbar() {
                             </Link>
                         ))}
                         <div className="flex items-center gap-4 border-l border-white/10 pl-6">
-                            <Link href="https://github.com/yourusername" target="_blank">
+                            <Link href="https://github.com/Andalexskywalker" target="_blank">
                                 <Github className="h-5 w-5 text-slate-400 hover:text-white transition-colors" />
                             </Link>
-                            <Link href="https://linkedin.com/in/yourusername" target="_blank">
+                            <Link href="https://www.linkedin.com/in/andr%C3%A9-ramos-a7b3412a2/" target="_blank">
                                 <Linkedin className="h-5 w-5 text-slate-400 hover:text-white transition-colors" />
                             </Link>
                             <Button size="sm" variant="premium">
@@ -72,10 +72,10 @@ export function Navbar() {
                         ))}
                         <div className="flex flex-col gap-4 pt-4 border-t border-white/10">
                             <div className="flex gap-4">
-                                <Link href="https://github.com/yourusername" target="_blank">
+                                <Link href="https://github.com/Andalexskywalker" target="_blank">
                                     <Github className="h-5 w-5 text-slate-400 hover:text-white" />
                                 </Link>
-                                <Link href="https://linkedin.com/in/yourusername" target="_blank">
+                                <Link href="https://www.linkedin.com/in/andr%C3%A9-ramos-a7b3412a2/" target="_blank">
                                     <Linkedin className="h-5 w-5 text-slate-400 hover:text-white" />
                                 </Link>
                             </div>

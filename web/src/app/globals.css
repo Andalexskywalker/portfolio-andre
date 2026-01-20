@@ -1,12 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @layer base {
   :root {
     /* Deep Slate / Near Black Backgrounds */
-    --background: 222 47% 11%; /* #0f172a */
-    --foreground: 210 40% 98%; /* #f8fafc */
+    --background: 222 47% 11%;
+    /* #0f172a */
+    --foreground: 210 40% 98%;
+    /* #f8fafc */
 
     --card: 222 47% 11%;
     --card-foreground: 210 40% 98%;
@@ -14,7 +15,8 @@
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%; /* #3b82f6 Electric Blue */
+    --primary: 217 91% 60%;
+    /* #3b82f6 Electric Blue */
     --primary-foreground: 222 47% 11%;
 
     --secondary: 217 19% 27%;
@@ -39,9 +41,23 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  .bg-stars {
+    background-color: #020617;
+    background-image:
+      radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 3px),
+      radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 2px),
+      radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 3px);
+    background-size: 550px 550px, 350px 350px, 250px 250px;
+    background-position: 0 0, 40px 60px, 130px 270px;
   }
 }

@@ -1,6 +1,6 @@
 export function TechStack() {
     const techs = [
-        "Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "Python",
+        "Next.js", "React", "TypeScript", "AI Integration", "Python",
         "FastAPI", "PostgreSQL", "Docker", "Git", "Figma", "Prisma"
     ];
 

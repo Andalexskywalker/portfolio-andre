@@ -13,12 +13,15 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
     return (
         <Card className="group overflow-hidden border-white/10 bg-slate-900/50 transition-colors hover:border-white/20">
-            <div className="relative aspect-video overflow-hidden">
+            <div className={`relative aspect-video overflow-hidden ${project.thumbnail.endsWith('.svg') ? 'bg-slate-900' : ''}`}>
                 <Image
                     src={project.thumbnail}
                     alt={project.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`${project.thumbnail.endsWith('.svg')
+                            ? "object-contain p-12 hover:scale-110"
+                            : "object-cover group-hover:scale-105"
+                        } transition-transform duration-500`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-60" />
             </div>

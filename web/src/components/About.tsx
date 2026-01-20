@@ -14,18 +14,18 @@ export function About() {
                         Building digital products with intent and precision.
                     </h2>
                     <p className="text-lg text-slate-400">
-                        I'm a Full Stack Developer with a passion for building beautiful, functional, and scalable web applications.
-                        I bridge the gap between design and engineering, ensuring that every pixel has a purpose and every line of code adds value.
+                        I'm a Software Engineer focused on building robust, scalable solutions, with a core specialization in Python and Java.
+                        <br />
+                        <br />
+                        I bridge the gap between complex backend logic and efficient deployment, ensuring every system runs optimally. My expertise extends to server management (Apache, Nginx) and containerization with Docker for improved organization and performance.
+                        <br />
+                        <br />
+                        Beyond traditional coding, I have a deep curiosity for Artificial Intelligence, using it to exponentially enhance my ideas and projects. I am also actively expanding my knowledge in Cloud Computing to design even more resilient architectures.
+                        <br />
+                        <br />
+                        While I still build creative applications, my passion lies in engineering the powerful engines that drive them.
                     </p>
-                    <div className="space-y-4 text-slate-400">
-                        <p>
-                            My journey started with a curiosity for how things work on the web, which led me to dive deep into the ecosystem of JavaScript and Python.
-                            Today, I build robust solutions using modern technologies like Next.js, React, Node.js, and Cloud Infrastructure.
-                        </p>
-                        <p>
-                            When I'm not coding, you can find me exploring new tech trends, optimizing workflows, or contributing to open source.
-                        </p>
-                    </div>
+
                     <Button variant="outline" className="gap-2" asChild>
                         <a href="/cv.pdf" target="_blank">
                             Download CV <ArrowRight className="h-4 w-4" />
@@ -46,40 +46,40 @@ export function About() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white">Frontend</h4>
-                                    <p className="text-sm text-slate-400">React, Next.js, Tailwind</p>
+                                    <p className="text-sm text-slate-400">React, Next.js</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-green-500/10 text-green-400">
-                                    <Server className="h-6 w-6" />
+                                    <Code2 className="h-6 w-6" />
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white">Backend</h4>
-                                    <p className="text-sm text-slate-400">Node, Python, APIs</p>
+                                    <p className="text-sm text-slate-400">Python, Java, FastAPI</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500/10 text-orange-400">
-                                    <Database className="h-6 w-6" />
+                                    <Server className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-white">Database</h4>
-                                    <p className="text-sm text-slate-400">PostgreSQL, MongoDB</p>
+                                    <h4 className="font-semibold text-white">Infrastructure</h4>
+                                    <p className="text-sm text-slate-400">Docker, Nginx, Apache</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-500/10 text-cyan-400">
-                                    <Code2 className="h-6 w-6" />
+                                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-500/10 text-purple-400">
+                                    <Sparkles className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-white">DevOps</h4>
-                                    <p className="text-sm text-slate-400">Docker, Git, CI/CD</p>
+                                    <h4 className="font-semibold text-white">AI & Cloud</h4>
+                                    <p className="text-sm text-slate-400">LLMs, Agents, RAG</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

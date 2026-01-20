@@ -16,74 +16,99 @@ export const projects: Project[] = [
         slug: "cloud-cost-copilot",
         title: "Cloud Cost Copilot",
         description: "An intelligent dashboard for monitoring and analyzing cloud infrastructure costs in near real-time.",
-        tags: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "Python"],
+        tags: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "Tailwind CSS"],
         thumbnail: "/projects/cloud-cost-copilot/main-dashboard.png",
+        githubUrl: "https://github.com/Andalexskywalker/cloud-cost-copilot",
         images: [
             "/projects/cloud-cost-copilot/main-dashboard.png",
             "/projects/cloud-cost-copilot/filtering.png",
-            "/projects/cloud-cost-copilot/results-info.png",
+            "/projects/cloud-cost-copilot/results-info.png"
         ],
-        githubUrl: "https://github.com/Andalexskywalker/cloud-cost-copilot",
-        featured: true,
         content: `
-# Cloud Cost Copilot
+![Dashboard Preview](/projects/cloud-cost-copilot/main-dashboard.png)
 
 **An intelligent dashboard for monitoring and analyzing cloud infrastructure costs in near real-time.**
 
 Cloud Cost Copilot is a full-stack application designed to visualize cloud spending patterns, detect anomalies, and provide actionable insights. Built with modern technologies, it demonstrates a complete data pipeline from ingestion to visualization.
 
-## Tech Stack
+## 📌 Project Overview
+The system allows users to monitor their cloud expenses with precision, providing tools to:
+*   **Visualize**: Interactive charts using Recharts.
+*   **Analyze**: Granular filtering by service and date.
+*   **Secure**: Token-based authentication between services.
 
-This project utilizes a robust, containerized architecture:
+---
 
-*   **Frontend**: Next.js 14 (React) with Tailwind CSS for a responsive and performant UI.
-*   **Backend**: FastAPI (Python) for high-performance API endpoints and data processing.
-*   **Database**: PostgreSQL for reliable relational data storage.
-*   **Infrastructure**: Docker Compose for orchestration and easy deployment.
+## 🛠️ Tech Stack & Architecture
 
-## Key Features
+### Frontend
+*   **Next.js 14**: Modern React framework for performance.
+*   **Tailwind CSS**: Rapid UI development.
+*   **Recharts**: Powerful data visualization library.
 
-### 1. Interactive Cost Dashboard
-*   **Visual Analytics**: View cost trends over time with dynamic charts.
-*   **Granular Filtering**: Filter expenses by date range and specific cloud services (e.g., EC2, S3, RDS).
-*   **Aggregated Metrics**: Instantly see total costs and daily breakdowns.
+![Filtering Preview](/projects/cloud-cost-copilot/filtering.png)
 
-### 2. Anomaly Detection (Simulation)
-*   **Smart Alerts**: The system identifies unusual spending spikes (e.g., 200% increase in daily costs).
-*   **Severity Levels**: Alerts are categorized by severity (High/Medium/Low) to prioritize attention.
+### Backend ecosystem
+*   **FastAPI (Python)**: High-speed API creation.
+*   **PostgreSQL**: Robust relational database.
+*   **SQLAlchemy**: Python SQL toolkit and Object Relational Mapper.
+*   **Docker Compose**: Orchestration for multi-container development.
 
-### 3. Secure Architecture
-*   **Token-Based Authentication**: Secure API communication between frontend and backend using shared tokens.
-*   **Environment Isolation**: Strict separation of concerns using Docker containers for Frontend, Backend, and Database.
+---
+
+## ✨ Key Features
+1.  **Interactive Cost Dashboard**: View cost trends over time with dynamic charts.
+2.  **Granular Filtering**: Filter expenses by date range and specific cloud services (e.g., EC2, S3, RDS).
+3.  **Secure Architecture**: Backend and Database isolated in private network, accessible only via API proxy.
+
+## 🚀 Why I Built This
+To master **containerized full-stack development**. This project bridges the gap between a modern frontend and a scalable Python backend, simulating a real-world DevOps dashboard scenario.
     `,
     },
     {
         slug: "friday-bot",
         title: "Friday AI",
         description: "An Autonomous OS Orchestrator that bridges the gap between LLMs and local system environments.",
-        tags: ["Python", "LLM", "Automation", "Windows API", "AI"],
-        thumbnail: "/projects/friday-bot/friday-logo.png",
-        images: ["/projects/friday-bot/friday-logo.png"],
+        tags: ["Python", "LLM", "Windows API", "Automation", "HCI"],
+        thumbnail: "/projects/friday-bot/friday_icon.png",
         githubUrl: "https://github.com/Andalexskywalker/jarvis-like.git",
         featured: true,
+        images: [
+            "/projects/friday-bot/friday_icon.png",
+            "/projects/friday-bot/dashboard.png"
+        ],
         content: `
-# Friday AI: Portfolio Strategy 💼
+![Friday AI Interface](/projects/friday-bot/dashboard.png)
 
-## The Pitch
+**An Autonomous OS Orchestrator bridging the gap between LLMs and your local PC.**
+
+## 📌 The Pitch
 "Friday is an **Autonomous OS Orchestrator** that bridges the gap between Large Language Models and local system environments. Unlike standard chatbots, Friday utilizes a **Dynamic Tool Registry** and a **Self-Healing API Client** to execute real-world tasks (Media, File System, System Stats) on a Windows environment."
 
-## Top 3 Technical Highlights (Interview Talk)
-1.  **Dynamic Introspection Tooling**: Built a registry that uses Python's \`inspect\` module to automatically map LLM JSON outputs to local function signatures. This makes the system infinitely extensible with zero hard-coding of argument mapping.
-2.  **Thread-Safe COM Integration**: Solved complex Windows threading issues (PyCaw/TTS) using \`CoInitialize\` within background worker threads, ensuring stability in a "headless" background environment.
-3.  **Self-Healing Client Pattern**: Designed a resilient API client that dynamically probes for working model versions and implements exponential backoff for rate-limiting, making the agent "production-ready" despite API instability.
+---
 
-## Personification
-It's an exploration in **Human-Computer Interaction (HCI)**. I wanted to see how a proactive assistant (instead of a reactive one) changes the user experience in a desktop environment. The personification allows for clearer feedback loops (voice synthesis), making the 'headless' nature of the background process intuitive for the user.
+## 🛠️ Technical Highlights
 
-## Future Roadmap (Shows growth mindset)
-- Implementation of **Computer Vision** (OpenCV/Vision LLM) for screen-aware reasoning.
-- **Native Windows Toast** integration for non-intrusive background alerting.
-- **RAG (Retrieval Augmented Generation)** for local file indexing and intelligent search.
+### 1. Dynamic Introspection Tooling
+Built a registry that uses Python's \`inspect\` module to automatically map LLM JSON outputs to local function signatures. This makes the system **infinitely extensible** with zero hard-coding of argument mapping.
+
+### 2. Thread-Safe COM Integration
+Solved complex Windows threading issues (PyCaw/TTS) using \`CoInitialize\` within background worker threads, ensuring stability in a "headless" background workflow.
+
+### 3. Self-Healing Client Pattern
+Designed a resilient API client that dynamically probes for working model versions and implements exponential backoff for rate-limiting, making the agent "production-ready" despite API instability.
+
+---
+
+## 🤖 HCI & Personification
+It's an exploration in **Human-Computer Interaction (HCI)**. I wanted to see how a proactive assistant (instead of a reactive one) changes the user experience in a desktop environment. 
+
+The personification allows for clearer feedback loops (voice synthesis), making the 'headless' nature of the background process intuitive for the user.
+
+## 🚀 Future Roadmap
+*   **Computer Vision**: OpenCV integration for screen-aware reasoning.
+*   **Native Windows Toast**: Integration for non-intrusive background alerting.
+*   **RAG (Retrieval Augmented Generation)**: Local file indexing for intelligent search.
     `,
     },
     {
@@ -91,42 +116,55 @@ It's an exploration in **Human-Computer Interaction (HCI)**. I wanted to see how
         title: "PraiaFinder",
         description: "Real-time beach recommendation engine simplifying weather data into a 0-10 score.",
         tags: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Data Science"],
-        thumbnail: "/projects/praia-finder/dashboard.png",
-        images: ["/projects/praia-finder/dashboard.png", "/projects/praia-finder/map.png"],
+        thumbnail: "/projects/praia-finder/intro.gif",
+        githubUrl: "https://github.com/Andalexskywalker/praiafinder",
+        images: [
+            "/projects/praia-finder/intro.gif",
+            "/projects/praia-finder/dashboard.gif",
+            "/projects/praia-finder/dashboard.png"
+        ],
         content: `
-# 🏖️ PraiaFinder
+
+![PraiaFinder Demo](/projects/praia-finder/intro.gif)
 
 **Find the perfect beach in Portugal, every time.**
 
 ## 📌 Project Overview
-PraiaFinder is a real-time beach recommendation engine designed to simplify the decision-making process for beachgoers in Portugal. Instead of drowning users in raw meteorological data (wind speed knots, swell period seconds, etc.), PraiaFinder aggregates complex weather and marine forecasts into a simple **0-10 score**.
+PraiaFinder is a real-time beach recommendation engine that solves the "where should we go?" problem. Instead of drowning users in raw meteorological data (knots, swell period, etc.), it aggregates complex forecasts into a simple **0-10 score** based on your intent.
 
-The core innovation is its context-aware scoring system, which evaluates conditions differently based on the user's intent:
-- **Surf Mode**: High waves and strong offshore winds boost the score.
-- **Family Mode**: Calm waters, low wind, and warm temperatures are prioritized.
+### Context-Aware Scoring
+The core innovation is an algorithm that changes based on what you want to do:
+
+*   **🏄 for Surfers**: High waves and strong offshore winds = **High Score**.
+*   **🏖️ for Families**: Calm waters, low wind, and warm temps = **High Score**.
+
+---
 
 ## 🛠️ Tech Stack & Architecture
-This project demonstrates a full-stack approach with a focus on data processing and user experience.
 
 ### Frontend (User Experience)
-- **Framework**: Next.js 14 (App Router) for server-side rendering and performance.
-- **Styling**: Tailwind CSS for a mobile-first, responsive design.
-- **Animations**: Framer Motion for fluid page transitions and interactive elements.
-- **Language**: TypeScript for type safety and scalability.
+*   **Next.js 14 (App Router)**: Server-side rendering for instant loads.
+*   **Tailwind CSS**: Fully responsive, mobile-first design.
+*   **Framer Motion**: Fluid animations for a premium feel.
+
+![Dashboard Interaction](/projects/praia-finder/dashboard.gif)
 
 ### Backend (Logic & Data)
-- **API**: FastAPI providing high-performance endpoints.
-- **Language**: Python 3.10+.
-- **Data Processing**: Custom ETL pipeline (\`fetch_and_score.py\`) that handles:
-    - **Concurrent Fetching**: Uses \`asyncio\` and \`httpx\` with semaphores to efficiently query external APIs for hundreds of beaches without hitting rate limits.
-    - **Smart Classification**: automatically distinguishes between "Maritime" (ocean) and "Fluvial" (river) beaches to apply the correct forecasting models.
-    - **Scoring Algorithm**: A weighted scoring matrix that normalizes raw weather data into user-friendly ratings.
+*   **FastAPI (Python)**: High-performance async API.
+*   **Custom ETL Pipeline**:
+    *   **Concurrent Fetching**: Uses \`asyncio\` to query hundreds of beaches simultaneously without rate limits.
+    *   **Smart Classification**: Automatically detects if a beach is "Ocean" or "River" to apply the correct weather model.
+    *   **Caching**: Minimizes external API calls for speed and cost efficiency.
+
+---
 
 ## ✨ Key Features
-1.  **Context-Aware Scoring**: A unique algorithm that interprets the same weather data differently depending on the user's goal (Surfing vs. Relaxing).
-2.  **Interactive Coast Map**: Visualizes beach conditions across the entire Portuguese coastline, allowing users to find "pockets" of good weather.
-3.  **Smart Caching**: The backend implements efficient data caching strategies to minimize external API calls and ensure instant load times for users.
-4.  **Resilient Data Pipeline**: The batch processing system handles API failures gracefully with exponential backoff and retry mechanisms.
+1.  **Interactive Coast Map**: Visualizes conditions across the entire Portuguese coastline.
+2.  **Smart Search**: Filter by region, score, or specific beach features.
+3.  **Resilient System**: Handles external API failures gracefully with retries and fallbacks.
+
+## 🚀 Why I Built This
+Living in Portugal, the weather varies drastically just a few kilometers apart. This project allowed me to solve a real-world problem while exploring **advanced Python concurrency** and building a **polished React application**.
     `,
     },
     {
@@ -134,41 +172,98 @@ This project demonstrates a full-stack approach with a focus on data processing 
         title: "Park & Ride Simulator",
         description: "A cloud-native microservices application to simulate and manage city parking networks.",
         tags: ["Java", "Spring Boot", "Microservices", "Docker", "React"],
-        thumbnail: "/projects/prr-simulator/dashboard.png",
-        images: ["/projects/prr-simulator/dashboard.png", "/projects/prr-simulator/admin.png"],
+        thumbnail: "/projects/prr-simulator/vite.svg",
+        images: [
+            "/projects/prr-simulator/vite.svg",
+            "/projects/prr-simulator/dashboard_user.png",
+            "/projects/prr-simulator/admin_dashboard.png",
+            "/projects/prr-simulator/parking_car.gif"
+        ],
+        githubUrl: "https://github.com/Andalexskywalker/prr_simulator.git",
         content: `
 # Park & Ride Simulator (PRR)
 
 **Core Goal**: Reduce urban traffic congestion and CO2 emissions by encouraging drivers to park at peripheral hubs and switch to public transport.
 
-This project serves as a technical portfolio piece demonstrating mastery of **distributed systems**, **microservices architecture**, and **full-stack development** using industry-standard technologies.
+This project is a technical showcase of **Distributed Systems**, **Microservices Architecture**, and **Full-Stack Development**.
 
-## Technical Architecture
-The system is built on a robust, scalable stack designed for reliability and observability.
+---
 
-### Backend (Spring Cloud Ecosystem)
-- **Language**: Java 21
-- **Framework**: Spring Boot 3.5.6
-- **Service Registry**: Netflix Eureka (Dynamic discovery of microservices)
-- **API Gateway**: Spring Cloud Gateway (Single entry point, routing, and filtering)
-- **Communication**: REST APIs (OpenFeign for inter-service communication)
-- **Database**: PostgreSQL (Containerized)
-- **Security**: JWT Authentication (Stateless)
+## 🏗️ Technical Architecture
 
-### Microservices Breakdown
-The backend is decomposed into 5 distinct domains:
-1.  **Api Gateway**: Entry point, routing, and auth.
-2.  **Eureka Server**: Service registry.
-3.  **Service Parques**: Inventory and capacity management.
-4.  **Service Utilizadores**: User identity and vehicle management.
-5.  **Service Sessoes**: Operations (Check-in/Check-out).
-6.  **Service Tarifas**: Billing and invoices.
-7.  **Service Analytics**: Intelligence and insights.
+The system is built on the **Spring Cloud Ecosystem** (Java 21), orchestrated via Docker.
 
-## Key User Flows supported
-- **Driver (User)**: Register, manage vehicles, view dashboard, and simulate parking sessions.
-- **Operator**: Monitor capacity and manually open/close parks.
-- **Administrator**: Access analytics dashboard (Cost Copilot).
+*   **Service Registry**: Netflix Eureka.
+*   **Gateway**: Spring Cloud Gateway.
+*   **Communication**: OpenFeign (REST).
+*   **Database**: PostgreSQL (Containerized).
+
+---
+
+## 🚦 Phase 1: Onboarding (The Driver)
+
+### 1. Registration & Identity
+The system employs a secure JWT-based authentication flow. Users first create an account and then register their vehicles (license plates) to their profile.
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <img src="/projects/prr-simulator/register.png" alt="User Registration" className="rounded-lg border border-white/10" />
+  <img src="/projects/prr-simulator/register_car.png" alt="Vehicle Registration" className="rounded-lg border border-white/10" />
+</div>
+
+### 2. Authentication
+Once registered, users log in to access the system. The **API Gateway** handles the routing and validation of credentials.
+
+![Login Screen](/projects/prr-simulator/login.png)
+
+### 3. User Profile
+Users can manage their fleet, view personal details, and verify their role status (User vs Operator vs Admin) from their profile page.
+
+![User Profile](/projects/prr-simulator/user_profile.png)
+
+---
+
+## 🅿️ Phase 2: The Core Experience
+
+### 1. Real-Time Dashboard
+Upon logging in, the user is greeted by a live dashboard showing the capacity of all peripheral parks. Green indicates available spots; Red indicates full capacity.
+
+![User Dashboard](/projects/prr-simulator/dashboard_user.png)
+
+### 2. Simulation Engine (Check-In)
+This is the heart of the simulator. A user selects a park and initiates a parking session ("Check In"). The **Sessions Microservice** begins tracking the duration in real-time.
+
+![Parking Simulation](/projects/prr-simulator/parking_car.gif)
+
+### 3. Smart Billing (Check-Out)
+When the user "Checks Out", the **Tariffs Microservice** calculates the cost based on the exact duration and vehicle type, generating an instant digital invoice.
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <img src="/projects/prr-simulator/payment.gif" alt="Payment Animation" className="rounded-lg border border-white/10" />
+  <img src="/projects/prr-simulator/payment.png" alt="Invoice Receipt" className="rounded-lg border border-white/10" />
+</div>
+
+---
+
+## 👮‍♂️ Phase 3: Operational Control
+
+### 1. Operator Dashboard
+Operators have a privileged view of the network. They can monitor real-time occupancy and manually **Close** or **Open** parks for maintenance or emergencies.
+
+![Operator Dashboard](/projects/prr-simulator/op_dashboard.png)
+
+### 2. Operator Registration
+The system supports distinct role onboarding. New operators can be registered with specific permissions to manage the infrastructure.
+
+![Operator Registration](/projects/prr-simulator/register_op.png)
+
+---
+
+## 📊 Phase 4: Administrative Intelligence
+
+### Cost Copilot Analytics
+Administrators have access to high-level metrics. The **Analytics Microservice** aggregates data from all other services to visualize total revenue, network health, and usage trends.
+
+![Admin Dashboard](/projects/prr-simulator/admin_dashboard.png)
     `,
     },
     {
@@ -176,8 +271,8 @@ The backend is decomposed into 5 distinct domains:
         title: "SMCTE - Space Traffic",
         description: "Using Deep Learning to predict space collisions and reduce false alarms for satellite operators.",
         tags: ["Python", "Deep Learning", "Keras", "TensorFlow", "Data Science"],
-        thumbnail: "/projects/projeto-final-curso/dashboard.png",
-        images: ["/projects/projeto-final-curso/dashboard.png"],
+        thumbnail: "/projects/smcte/icon-v2.png",
+        images: ["/projects/smcte/icon-v2.png", "/projects/smcte/orbit_view.png", "/projects/smcte/dashboard.png"],
         githubUrl: "https://github.com/Andalexskywalker/SMCTE",
         content: `
 # SMCTE — Space Traffic Monitoring System
@@ -204,36 +299,49 @@ Desenvolvi uma aplicação que utiliza **Deep Learning (Recurrent Neural Network
     },
     {
         slug: "chess-engine",
-        title: "Java Chess Engine",
-        description: "A robust desktop game engine for Chess and Checkers built with Java and Swing.",
-        tags: ["Java", "Swing", "OOP", "Game Dev", "Algorithms"],
-        thumbnail: "/projects/xadrez-damas/gameplay.png",
-        images: ["/projects/xadrez-damas/gameplay.png"],
+        title: "Java Chess & Checkers",
+        description: "A robust Swing-based game engine demonstrating strict OOP principles and Game AI.",
+        tags: ["Java", "Swing", "OOP", "Game AI", "Algorithms"],
+        thumbnail: "/projects/chess-engine/icon-v3.png",
+        githubUrl: "https://github.com/Andalexskywalker/XadrezDamas",
+        images: ["/projects/chess-engine/icon-v3.png", "/projects/chess-engine/menu.png", "/projects/chess-engine/Xadrez.gif", "/projects/chess-engine/Damas.gif"],
         content: `
 # Java Chess & Checkers Engine
 
-## Project Overview
-This project is a robust desktop game engine featuring two classic board games: **Chess** and **Checkers (Damas)**. Built entirely in **Java** using the **Swing** framework, it serves as a comprehensive demonstration of Object-Oriented Programming (OOP) principles, complex state management, and custom graphical user interface (GUI) development. The application supports both local 2-player matches and a single-player mode against a CPU opponent.
+**A pure Java implementation of classic board games, prioritizing Clean Architecture and Object-Oriented Design.**
 
-## Key Features
+This project was built to master the fundamentals of **Software Architecture** without relying on modern game engines.
 
-### 1. Dual Game Modes
--   **Chess (Xadrez):** Full implementation of standard chess rules, including piece-specific movements, capturing logic, and distinct behavior for pawns.
--   **Checkers (Damas):** Implements traditional checkers rules with **mandatory capture** enforcement, multi-jump logic, and "Dama" (King) promotion.
+---
 
-### 2. Intelligent Game Logic
--   **Move Validation:** The engine strictly enforces legal moves for every piece type.
--   **CPU Opponent:** A single-player mode featuring a computer opponent capable of analyzing the board and making valid moves.
--   **Game State Management:** Handles turn switching, check/checkmate detection, and "Game Over" states.
+## 🏛️ Architecture: Strict OOP
+The core strength of this engine is its adherence to **Object-Oriented Designing Principles**:
+*   **Polymorphism**: A base \`Piece\` class defines movement contracts. Subclasses like \`Bishop\`, \`Knight\`, and \`King\` implement specific move validation logic.
+*   **Encapsulation**: Game states (Check, Checkmate, Stalemate) are isolated from the rendering logic.
+*   **Inheritance**: Shared logic between Chess and Checkers is abstracted to reduce code duplication.
 
-### 3. Custom UI & UX
--   **Swing-based GUI:** A completely custom-rendered board using \`Graphics2D\` for smooth visuals.
--   **Interactive Mechanics:** Features intuitive **drag-and-drop** mechanics.
+---
 
-## Technical Highlights
--   **Polymorphism:** A base \`Peca\` (Piece) class defines common behaviors.
--   **Encapsulation:** Clean separation of game state, board data, and rendering logic.
--   **Swing Painting:** Mastering \`paintComponent\` and \`Graphics2D\` for a flicker-free, responsive game board.
+## 🤖 Intelligent Game Logic
+### Move Validation
+The engine doesn't just "move pieces"; it *simulates* the board state to prevent illegal moves (e.g., you cannot make a move that leaves your King in check).
+*   **Chess**: Handles En Passant, Castling, and Pawn Promotion.
+*   **Checkers**: strict enforcement of **Mandatory Captures** and Multi-Jump chains.
+
+### CPU Opponent
+A single-player mode that evaluates board states to make valid moves against the player.
+
+![Chess Gameplay](/projects/chess-engine/Xadrez.gif)
+
+---
+
+## 🎨 Custom Swing GUI
+Instead of using standard buttons, I implemented a custom **Graphics2D** rendering pipeline.
+*   **Smooth Rendering**: Double-buffered painting to prevent flickering.
+*   **Drag & Drop**: Intuitive mouse interaction for picking up and placing pieces.
+*   **Dynamic Highlighting**: Visual cues for valid moves (Green) and captures (Red).
+
+![Checkers Gameplay](/projects/chess-engine/Damas.gif)
     `,
     },
 ];

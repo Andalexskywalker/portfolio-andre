@@ -9,10 +9,10 @@ export function Footer() {
                     © {new Date().getFullYear()} André. All rights reserved.
                 </p>
                 <div className="flex items-center gap-6">
-                    <Link href="https://github.com/yourusername" className="text-slate-400 hover:text-white transition-colors">
+                    <Link href="https://github.com/Andalexskywalker" className="text-slate-400 hover:text-white transition-colors">
                         <Github className="h-5 w-5" />
                     </Link>
-                    <Link href="https://linkedin.com/in/yourusername" className="text-slate-400 hover:text-white transition-colors">
+                    <Link href="https://www.linkedin.com/in/andr%C3%A9-ramos-a7b3412a2/" className="text-slate-400 hover:text-white transition-colors">
                         <Linkedin className="h-5 w-5" />
                     </Link>
                     <Link href="mailto:contact@example.com" className="text-slate-400 hover:text-white transition-colors">
