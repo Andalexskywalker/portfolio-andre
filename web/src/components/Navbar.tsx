@@ -79,8 +79,8 @@ export function Navbar() {
                                     <Linkedin className="h-5 w-5 text-slate-400 hover:text-white" />
                                 </Link>
                             </div>
-                            <Button size="sm" variant="premium" className="w-full">
-                                Contact Me
+                            <Button size="sm" variant="premium" className="w-full" asChild>
+                                <a href="mailto:andalex.ramos04@gmail.com">Contact Me</a>
                             </Button>
                         </div>
                     </div>

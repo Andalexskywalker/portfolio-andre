@@ -26,13 +26,13 @@ export function About() {
                         While I still build creative applications, my passion lies in engineering the powerful engines that drive them.
                     </p>
 
-                    <div className="flex gap-3">
-                        <Button variant="outline" className="gap-2" asChild>
+                    <div className="flex flex-wrap gap-3">
+                        <Button variant="outline" className="gap-2 w-full sm:w-auto" asChild>
                             <a href="/cv_en.pdf" target="_blank">
                                 CV (English) <ArrowRight className="h-4 w-4" />
                             </a>
                         </Button>
-                        <Button variant="outline" className="gap-2" asChild>
+                        <Button variant="outline" className="gap-2 w-full sm:w-auto" asChild>
                             <a href="/cv_pt.pdf" target="_blank">
                                 CV (Portuguese) <ArrowRight className="h-4 w-4" />
                             </a>
@@ -41,8 +41,8 @@ export function About() {
                 </div>
 
                 {/* Visual / Image Side */}
-                <div className="order-1 lg:order-2 flex justify-center">
-                    <div className="relative h-[400px] w-[350px] sm:w-[400px] rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-sm">
+                <div className="order-1 lg:order-2 flex justify-center w-full">
+                    <div className="relative h-auto min-h-[400px] w-full max-w-[350px] sm:max-w-[400px] rounded-2xl border border-white/10 bg-slate-900/50 p-6 backdrop-blur-sm">
                         <div className="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-blue-500/20 blur-2xl" />
                         <div className="absolute -bottom-4 -left-4 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl" />
 
