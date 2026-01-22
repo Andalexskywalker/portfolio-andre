@@ -40,11 +40,18 @@ export function Hero() {
                         View My Work <ArrowRight className="h-4 w-4" />
                     </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="gap-2" asChild>
-                    <Link href="/cv.pdf" target="_blank">
-                        <FileText className="h-4 w-4" /> Download CV
-                    </Link>
-                </Button>
+                <div className="flex gap-2">
+                    <Button variant="outline" size="lg" className="gap-2" asChild>
+                        <Link href="/cv_en.pdf" target="_blank">
+                            <FileText className="h-4 w-4" /> CV (EN)
+                        </Link>
+                    </Button>
+                    <Button variant="outline" size="lg" className="gap-2" asChild>
+                        <Link href="/cv_pt.pdf" target="_blank">
+                            <FileText className="h-4 w-4" /> CV (PT)
+                        </Link>
+                    </Button>
+                </div>
             </motion.div>
 
             <motion.div

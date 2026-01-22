@@ -26,11 +26,18 @@ export function About() {
                         While I still build creative applications, my passion lies in engineering the powerful engines that drive them.
                     </p>
 
-                    <Button variant="outline" className="gap-2" asChild>
-                        <a href="/cv.pdf" target="_blank">
-                            Download CV <ArrowRight className="h-4 w-4" />
-                        </a>
-                    </Button>
+                    <div className="flex gap-3">
+                        <Button variant="outline" className="gap-2" asChild>
+                            <a href="/cv_en.pdf" target="_blank">
+                                CV (English) <ArrowRight className="h-4 w-4" />
+                            </a>
+                        </Button>
+                        <Button variant="outline" className="gap-2" asChild>
+                            <a href="/cv_pt.pdf" target="_blank">
+                                CV (Portuguese) <ArrowRight className="h-4 w-4" />
+                            </a>
+                        </Button>
+                    </div>
                 </div>
 
                 {/* Visual / Image Side */}
