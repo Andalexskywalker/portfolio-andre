@@ -8,8 +8,21 @@ import { Footer } from "@/components/Footer";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "André | Developer Portfolio",
-  description: "Portfolio of a Full Stack Developer specializing in Modern Web Tech and Automation.",
+  title: "André | Software Engineer",
+  description: "Software Engineer specializing in backend architecture, intelligent systems, and scalable infrastructure.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://portfolio-andre.vercel.app/",
+    title: "André | Software Engineer",
+    description: "Specializing in Python, Java, Docker, and AI Integration.",
+    siteName: "André Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "André | Software Engineer",
+    description: "Specializing in Python, Java, Docker, and AI Integration.",
+  },
 };
 
 export default function RootLayout({
