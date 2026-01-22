@@ -40,8 +40,8 @@ export function Navbar() {
                             <Link href="https://www.linkedin.com/in/andr%C3%A9-ramos-a7b3412a2/" target="_blank">
                                 <Linkedin className="h-5 w-5 text-slate-400 hover:text-white transition-colors" />
                             </Link>
-                            <Button size="sm" variant="premium">
-                                Contact Me
+                            <Button size="sm" variant="premium" asChild>
+                                <a href="mailto:andalex.ramos04@gmail.com">Contact Me</a>
                             </Button>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ export function Footer() {
                     <Link href="https://www.linkedin.com/in/andr%C3%A9-ramos-a7b3412a2/" className="text-slate-400 hover:text-white transition-colors">
                         <Linkedin className="h-5 w-5" />
                     </Link>
-                    <Link href="mailto:contact@example.com" className="text-slate-400 hover:text-white transition-colors">
+                    <Link href="mailto:andalex.ramos04@gmail.com" className="text-slate-400 hover:text-white transition-colors">
                         <Mail className="h-5 w-5" />
                     </Link>
                 </div>
