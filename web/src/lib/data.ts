@@ -179,7 +179,7 @@ Living in Portugal, the weather varies drastically just a few kilometers apart. 
             "/projects/prr-simulator/admin_dashboard.png",
             "/projects/prr-simulator/parking_car.gif"
         ],
-        githubUrl: "https://github.com/Andalexskywalker/prr_simulator.git",
+        githubUrl: "https://github.com/Andalexskywalker/park-ride-simulator",
         content: `
 # Park & Ride Simulator (PRR)
 
