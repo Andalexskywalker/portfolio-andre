@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-andre.vercel.app/",
+    url: "https://andre-ramos.dev/",
     title: "André | Software Engineer",
     description: "Specializing in Python, Java, Docker, and AI Integration.",
     siteName: "André Portfolio",
