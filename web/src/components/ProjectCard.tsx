@@ -31,6 +31,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                             ? "object-contain p-12 hover:scale-110"
                             : "object-cover group-hover:scale-105"
                         } transition-transform duration-500`}
+                    unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-60" />
                 {isFeatured && (

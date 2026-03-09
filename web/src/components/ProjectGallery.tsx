@@ -21,6 +21,7 @@ export function ProjectGallery({ images, title }: ProjectGalleryProps) {
                     fill
                     className={`object-contain ${activeImage.endsWith('.svg') ? "p-32" : ""}`}
                     priority
+                    unoptimized
                 />
             </div>
             <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
@@ -38,6 +39,7 @@ export function ProjectGallery({ images, title }: ProjectGalleryProps) {
                             alt={`Thumbnail ${index + 1}`}
                             fill
                             className="object-cover"
+                            unoptimized
                         />
                     </button>
                 ))}

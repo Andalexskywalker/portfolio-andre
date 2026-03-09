@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Mail, ArrowRight, MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
