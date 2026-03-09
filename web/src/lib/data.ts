@@ -15,7 +15,7 @@ export const projects: Project[] = [
     {
         slug: "cloud-cost-copilot",
         title: "Cloud Cost Copilot",
-        description: "An intelligent dashboard for monitoring and analyzing cloud infrastructure costs in near real-time.",
+        description: "A Next.js & FastAPI dashboard that tracks, filters, and visualizes AWS cloud spending in real-time, backed by PostgreSQL and containerized with Docker Compose.",
         tags: ["Next.js", "FastAPI", "PostgreSQL", "Docker", "Tailwind CSS"],
         thumbnail: "/projects/cloud-cost-copilot/main-dashboard.png",
         githubUrl: "https://github.com/Andalexskywalker/cloud-cost-copilot",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
         content: `
 ![Dashboard Preview](/projects/cloud-cost-copilot/main-dashboard.png)
 
-**An intelligent dashboard for monitoring and analyzing cloud infrastructure costs in near real-time.**
+**A full-stack dashboard for monitoring, filtering, and analyzing cloud infrastructure costs in near real-time.**
 
 Cloud Cost Copilot is a full-stack application designed to visualize cloud spending patterns, detect anomalies, and provide actionable insights. Built with modern technologies, it demonstrates a complete data pipeline from ingestion to visualization.
 
@@ -48,7 +48,7 @@ The system allows users to monitor their cloud expenses with precision, providin
 
 ![Filtering Preview](/projects/cloud-cost-copilot/filtering.png)
 
-### Backend ecosystem
+### Backend Ecosystem
 *   **FastAPI (Python)**: High-speed API creation.
 *   **PostgreSQL**: Robust relational database.
 *   **SQLAlchemy**: Python SQL toolkit and Object Relational Mapper.
@@ -59,7 +59,7 @@ The system allows users to monitor their cloud expenses with precision, providin
 ## ✨ Key Features
 1.  **Interactive Cost Dashboard**: View cost trends over time with dynamic charts.
 2.  **Granular Filtering**: Filter expenses by date range and specific cloud services (e.g., EC2, S3, RDS).
-3.  **Secure Architecture**: Backend and Database isolated in private network, accessible only via API proxy.
+3.  **Secure Architecture**: Backend and Database isolated in a private network, accessible only via API proxy.
 
 ## 🚀 Why I Built This
 To master **containerized full-stack development**. This project bridges the gap between a modern frontend and a scalable Python backend, simulating a real-world DevOps dashboard scenario.
@@ -68,7 +68,7 @@ To master **containerized full-stack development**. This project bridges the gap
     {
         slug: "friday-bot",
         title: "Friday AI",
-        description: "An Autonomous OS Orchestrator that bridges the gap between LLMs and local system environments.",
+        description: "A Python agent that connects an LLM to your Windows OS via a dynamic tool registry — controlling media, files, and system stats through voice and text.",
         tags: ["Python", "LLM", "Windows API", "Automation", "HCI"],
         thumbnail: "/projects/friday-bot/friday_icon.png",
         githubUrl: "https://github.com/Andalexskywalker/jarvis-like.git",
@@ -80,10 +80,8 @@ To master **containerized full-stack development**. This project bridges the gap
         content: `
 ![Friday AI Interface](/projects/friday-bot/dashboard.png)
 
-**An Autonomous OS Orchestrator bridging the gap between LLMs and your local PC.**
-
 ## 📌 The Pitch
-"Friday is an **Autonomous OS Orchestrator** that bridges the gap between Large Language Models and local system environments. Unlike standard chatbots, Friday utilizes a **Dynamic Tool Registry** and a **Self-Healing API Client** to execute real-world tasks (Media, File System, System Stats) on a Windows environment."
+Friday is an **Autonomous OS Orchestrator** that bridges the gap between Large Language Models and local system environments. Unlike standard chatbots, Friday utilizes a **Dynamic Tool Registry** and a **Self-Healing API Client** to execute real-world tasks (Media, File System, System Stats) on a Windows environment.
 
 ---
 
@@ -101,9 +99,9 @@ Designed a resilient API client that dynamically probes for working model versio
 ---
 
 ## 🤖 HCI & Personification
-It's an exploration in **Human-Computer Interaction (HCI)**. I wanted to see how a proactive assistant (instead of a reactive one) changes the user experience in a desktop environment. 
+It's an exploration in **Human-Computer Interaction (HCI)**. I wanted to see how a proactive assistant (instead of a reactive one) changes the user experience in a desktop environment.
 
-The personification allows for clearer feedback loops (voice synthesis), making the 'headless' nature of the background process intuitive for the user.
+The personification allows for clearer feedback loops (voice synthesis), making the "headless" nature of the background process intuitive for the user.
 
 ## 🚀 Future Roadmap
 *   **Computer Vision**: OpenCV integration for screen-aware reasoning.
@@ -114,7 +112,7 @@ The personification allows for clearer feedback loops (voice synthesis), making 
     {
         slug: "praia-finder",
         title: "PraiaFinder",
-        description: "Real-time beach recommendation engine simplifying weather data into a 0-10 score.",
+        description: "A Next.js & FastAPI app that scores Portuguese beaches from 0–10 in real-time using custom weather algorithms and an async Python ETL pipeline.",
         tags: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Data Science"],
         thumbnail: "/projects/praia-finder/intro.gif",
         githubUrl: "https://github.com/Andalexskywalker/praiafinder",
@@ -124,7 +122,6 @@ The personification allows for clearer feedback loops (voice synthesis), making 
             "/projects/praia-finder/dashboard.png"
         ],
         content: `
-
 ![PraiaFinder Demo](/projects/praia-finder/intro.gif)
 
 **Find the perfect beach in Portugal, every time.**
@@ -170,7 +167,7 @@ Living in Portugal, the weather varies drastically just a few kilometers apart. 
     {
         slug: "prr-simulator",
         title: "Park & Ride Simulator",
-        description: "A cloud-native microservices application to simulate and manage city parking networks.",
+        description: "A Java Spring Boot microservices system — with Netflix Eureka, API Gateway, and Docker — simulating real-time parking sessions, smart billing, and role-based operator control.",
         tags: ["Java", "Spring Boot", "Microservices", "Docker", "React"],
         thumbnail: "/projects/prr-simulator/vite.svg",
         images: [
@@ -205,10 +202,9 @@ The system is built on the **Spring Cloud Ecosystem** (Java 21), orchestrated vi
 ### 1. Registration & Identity
 The system employs a secure JWT-based authentication flow. Users first create an account and then register their vehicles (license plates) to their profile.
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-  <img src="/projects/prr-simulator/register.png" alt="User Registration" className="rounded-lg border border-white/10" />
-  <img src="/projects/prr-simulator/register_car.png" alt="Vehicle Registration" className="rounded-lg border border-white/10" />
-</div>
+![User Registration](/projects/prr-simulator/register.png)
+
+![Vehicle Registration](/projects/prr-simulator/register_car.png)
 
 ### 2. Authentication
 Once registered, users log in to access the system. The **API Gateway** handles the routing and validation of credentials.
@@ -237,10 +233,9 @@ This is the heart of the simulator. A user selects a park and initiates a parkin
 ### 3. Smart Billing (Check-Out)
 When the user "Checks Out", the **Tariffs Microservice** calculates the cost based on the exact duration and vehicle type, generating an instant digital invoice.
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-  <img src="/projects/prr-simulator/payment.gif" alt="Payment Animation" className="rounded-lg border border-white/10" />
-  <img src="/projects/prr-simulator/payment.png" alt="Invoice Receipt" className="rounded-lg border border-white/10" />
-</div>
+![Payment Animation](/projects/prr-simulator/payment.gif)
+
+![Invoice Receipt](/projects/prr-simulator/payment.png)
 
 ---
 
@@ -260,7 +255,7 @@ The system supports distinct role onboarding. New operators can be registered wi
 
 ## 📊 Phase 4: Administrative Intelligence
 
-### Cost Copilot Analytics
+### Network Analytics
 Administrators have access to high-level metrics. The **Analytics Microservice** aggregates data from all other services to visualize total revenue, network health, and usage trends.
 
 ![Admin Dashboard](/projects/prr-simulator/admin_dashboard.png)
@@ -269,7 +264,7 @@ Administrators have access to high-level metrics. The **Analytics Microservice**
     {
         slug: "smcte",
         title: "SMCTE - Space Traffic",
-        description: "Using Deep Learning to predict space collisions and reduce false alarms for satellite operators.",
+        description: "A Python & TensorFlow/Keras system using LSTM and GRU neural networks to predict satellite collision probabilities from orbital CDM time-series data.",
         tags: ["Python", "Deep Learning", "Keras", "TensorFlow", "Data Science"],
         thumbnail: "/projects/smcte/icon-v2.png",
         images: ["/projects/smcte/icon-v2.png", "/projects/smcte/orbit_view.png", "/projects/smcte/dashboard.png"],
@@ -277,30 +272,30 @@ Administrators have access to high-level metrics. The **Analytics Microservice**
         content: `
 # SMCTE — Space Traffic Monitoring System
 
-**Tagline:** "Prever colisões no espaço com Deep Learning, reduzindo falsos alarmes em operações de satélite."
+**Tagline:** "Predicting space collisions with Deep Learning, reducing false alarms in satellite operations."
 
-### 🚀 O Que É?
-O **SMCTE** é um sistema inteligente de *Conjunction Assessment* (Avaliação de Conjunções) desenvolvido para lidar com o crescente problema do Lixo Espacial (*Space Debris*).
+### 🚀 What Is It?
+**SMCTE** is an intelligent *Conjunction Assessment* system developed to tackle the growing problem of Space Debris.
 
-### 💡 O Problema
-Com milhares de satélites em órbita, o risco de colisão é real. Os métodos tradicionais baseados apenas em física orbital geram demasiados "falsos positivos", obrigando os operadores a desperdiçar combustível em manobras de desvio desnecessárias.
+### 💡 The Problem
+With thousands of satellites in orbit, the risk of collision is real. Traditional methods based solely on orbital physics generate too many "false positives", forcing operators to waste fuel on unnecessary avoidance maneuvers.
 
-### 🛠️ A Minha Solução
-Desenvolvi uma aplicação que utiliza **Deep Learning (Recurrent Neural Networks - RNNs)** para analisar o histórico de erros de trajetória. O sistema:
-1.  Ingere mensagens de dados orbitais (CDM).
-2.  Processa séries temporais de posição e velocidade.
-3.  Estima a **Probabilidade de Colisão** com maior precisão que os modelos estáticos.
+### 🛠️ My Solution
+I developed an application that uses **Deep Learning (Recurrent Neural Networks — RNNs)** to analyze the historical trajectory error data of space objects. The system:
+1.  Ingests orbital data messages (CDMs).
+2.  Processes time-series data of position and velocity.
+3.  Estimates the **Probability of Collision** with greater accuracy than static models.
 
 ### 💻 Tech Stack
 *   **Python & Data Science:** Pandas, NumPy, Scikit-Learn.
-*   **Deep Learning:** Keras/TensorFlow (Modelos LSTM e GRU).
-*   **Interface:** Streamlit (Dashboard interativo para operadores).
+*   **Deep Learning:** Keras/TensorFlow (LSTM and GRU models).
+*   **Interface:** Streamlit (interactive dashboard for operators).
     `,
     },
     {
         slug: "chess-engine",
         title: "Java Chess & Checkers",
-        description: "A robust Swing-based game engine demonstrating strict OOP principles and Game AI.",
+        description: "A Java Swing game engine implementing Chess and Checkers from scratch — with full rule enforcement (Castling, En Passant, Mandatory Captures) and a CPU opponent.",
         tags: ["Java", "Swing", "OOP", "Game AI", "Algorithms"],
         thumbnail: "/projects/chess-engine/icon-v3.png",
         githubUrl: "https://github.com/Andalexskywalker/XadrezDamas",
@@ -326,7 +321,7 @@ The core strength of this engine is its adherence to **Object-Oriented Designing
 ### Move Validation
 The engine doesn't just "move pieces"; it *simulates* the board state to prevent illegal moves (e.g., you cannot make a move that leaves your King in check).
 *   **Chess**: Handles En Passant, Castling, and Pawn Promotion.
-*   **Checkers**: strict enforcement of **Mandatory Captures** and Multi-Jump chains.
+*   **Checkers**: Strict enforcement of **Mandatory Captures** and Multi-Jump chains.
 
 ### CPU Opponent
 A single-player mode that evaluates board states to make valid moves against the player.
