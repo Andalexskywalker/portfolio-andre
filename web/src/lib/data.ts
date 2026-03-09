@@ -31,7 +31,7 @@ export const projects: Project[] = [
 
 Cloud Cost Copilot is a full-stack application designed to visualize cloud spending patterns, detect anomalies, and provide actionable insights. Built with modern technologies, it demonstrates a complete data pipeline from ingestion to visualization.
 
-## 📌 Project Overview
+## Project Overview
 The system allows users to monitor their cloud expenses with precision, providing tools to:
 *   **Visualize**: Interactive charts using Recharts.
 *   **Analyze**: Granular filtering by service and date.
@@ -39,7 +39,7 @@ The system allows users to monitor their cloud expenses with precision, providin
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 ### Frontend
 *   **Next.js 14**: Modern React framework for performance.
@@ -56,12 +56,12 @@ The system allows users to monitor their cloud expenses with precision, providin
 
 ---
 
-## ✨ Key Features
+## Key Features
 1.  **Interactive Cost Dashboard**: View cost trends over time with dynamic charts.
 2.  **Granular Filtering**: Filter expenses by date range and specific cloud services (e.g., EC2, S3, RDS).
 3.  **Secure Architecture**: Backend and Database isolated in a private network, accessible only via API proxy.
 
-## 🚀 Why I Built This
+## Why I Built This
 To master **containerized full-stack development**. This project bridges the gap between a modern frontend and a scalable Python backend, simulating a real-world DevOps dashboard scenario.
     `,
     },
@@ -80,12 +80,12 @@ To master **containerized full-stack development**. This project bridges the gap
         content: `
 ![Friday AI Interface](/projects/friday-bot/dashboard.png)
 
-## 📌 The Pitch
+## The Pitch
 Friday is an **Autonomous OS Orchestrator** that bridges the gap between Large Language Models and local system environments. Unlike standard chatbots, Friday utilizes a **Dynamic Tool Registry** and a **Self-Healing API Client** to execute real-world tasks (Media, File System, System Stats) on a Windows environment.
 
 ---
 
-## 🛠️ Technical Highlights
+## Technical Highlights
 
 ### 1. Dynamic Introspection Tooling
 Built a registry that uses Python's \`inspect\` module to automatically map LLM JSON outputs to local function signatures. This makes the system **infinitely extensible** with zero hard-coding of argument mapping.
@@ -98,12 +98,12 @@ Designed a resilient API client that dynamically probes for working model versio
 
 ---
 
-## 🤖 HCI & Personification
+## HCI & Personification
 It's an exploration in **Human-Computer Interaction (HCI)**. I wanted to see how a proactive assistant (instead of a reactive one) changes the user experience in a desktop environment.
 
 The personification allows for clearer feedback loops (voice synthesis), making the "headless" nature of the background process intuitive for the user.
 
-## 🚀 Future Roadmap
+## Future Roadmap
 *   **Computer Vision**: OpenCV integration for screen-aware reasoning.
 *   **Native Windows Toast**: Integration for non-intrusive background alerting.
 *   **RAG (Retrieval Augmented Generation)**: Local file indexing for intelligent search.
@@ -132,8 +132,8 @@ PraiaFinder is a real-time beach recommendation engine that solves the "where sh
 ### Context-Aware Scoring
 The core innovation is an algorithm that changes based on what you want to do:
 
-*   **🏄 for Surfers**: High waves and strong offshore winds = **High Score**.
-*   **🏖️ for Families**: Calm waters, low wind, and warm temps = **High Score**.
+*   **For Surfers**: High waves and strong offshore winds = **High Score**.
+*   **For Families**: Calm waters, low wind, and warm temps = **High Score**.
 
 ---
 
@@ -186,7 +186,7 @@ This project is a technical showcase of **Distributed Systems**, **Microservices
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 The system is built on the **Spring Cloud Ecosystem** (Java 21), orchestrated via Docker.
 
@@ -197,7 +197,7 @@ The system is built on the **Spring Cloud Ecosystem** (Java 21), orchestrated vi
 
 ---
 
-## 🚦 Phase 1: Onboarding (The Driver)
+## Phase 1: Onboarding (The Driver)
 
 ### 1. Registration & Identity
 The system employs a secure JWT-based authentication flow. Users first create an account and then register their vehicles (license plates) to their profile.
@@ -218,7 +218,7 @@ Users can manage their fleet, view personal details, and verify their role statu
 
 ---
 
-## 🅿️ Phase 2: The Core Experience
+## Phase 2: The Core Experience
 
 ### 1. Real-Time Dashboard
 Upon logging in, the user is greeted by a live dashboard showing the capacity of all peripheral parks. Green indicates available spots; Red indicates full capacity.
@@ -239,7 +239,7 @@ When the user "Checks Out", the **Tariffs Microservice** calculates the cost bas
 
 ---
 
-## 👮‍♂️ Phase 3: Operational Control
+## Phase 3: Operational Control
 
 ### 1. Operator Dashboard
 Operators have a privileged view of the network. They can monitor real-time occupancy and manually **Close** or **Open** parks for maintenance or emergencies.
@@ -253,7 +253,7 @@ The system supports distinct role onboarding. New operators can be registered wi
 
 ---
 
-## 📊 Phase 4: Administrative Intelligence
+## Phase 4: Administrative Intelligence
 
 ### Network Analytics
 Administrators have access to high-level metrics. The **Analytics Microservice** aggregates data from all other services to visualize total revenue, network health, and usage trends.
@@ -274,19 +274,19 @@ Administrators have access to high-level metrics. The **Analytics Microservice**
 
 **Tagline:** "Predicting space collisions with Deep Learning, reducing false alarms in satellite operations."
 
-### 🚀 What Is It?
+### What Is It?
 **SMCTE** is an intelligent *Conjunction Assessment* system developed to tackle the growing problem of Space Debris.
 
-### 💡 The Problem
+### The Problem
 With thousands of satellites in orbit, the risk of collision is real. Traditional methods based solely on orbital physics generate too many "false positives", forcing operators to waste fuel on unnecessary avoidance maneuvers.
 
-### 🛠️ My Solution
+### My Solution
 I developed an application that uses **Deep Learning (Recurrent Neural Networks — RNNs)** to analyze the historical trajectory error data of space objects. The system:
 1.  Ingests orbital data messages (CDMs).
 2.  Processes time-series data of position and velocity.
 3.  Estimates the **Probability of Collision** with greater accuracy than static models.
 
-### 💻 Tech Stack
+### Tech Stack
 *   **Python & Data Science:** Pandas, NumPy, Scikit-Learn.
 *   **Deep Learning:** Keras/TensorFlow (LSTM and GRU models).
 *   **Interface:** Streamlit (interactive dashboard for operators).
@@ -309,7 +309,7 @@ This project was built to master the fundamentals of **Software Architecture** w
 
 ---
 
-## 🏛️ Architecture: Strict OOP
+## Architecture: Strict OOP
 The core strength of this engine is its adherence to **Object-Oriented Designing Principles**:
 *   **Polymorphism**: A base \`Piece\` class defines movement contracts. Subclasses like \`Bishop\`, \`Knight\`, and \`King\` implement specific move validation logic.
 *   **Encapsulation**: Game states (Check, Checkmate, Stalemate) are isolated from the rendering logic.
@@ -317,7 +317,7 @@ The core strength of this engine is its adherence to **Object-Oriented Designing
 
 ---
 
-## 🤖 Intelligent Game Logic
+## Intelligent Game Logic
 ### Move Validation
 The engine doesn't just "move pieces"; it *simulates* the board state to prevent illegal moves (e.g., you cannot make a move that leaves your King in check).
 *   **Chess**: Handles En Passant, Castling, and Pawn Promotion.
@@ -330,7 +330,7 @@ A single-player mode that evaluates board states to make valid moves against the
 
 ---
 
-## 🎨 Custom Swing GUI
+## Custom Swing GUI
 Instead of using standard buttons, I implemented a custom **Graphics2D** rendering pipeline.
 *   **Smooth Rendering**: Double-buffered painting to prevent flickering.
 *   **Drag & Drop**: Intuitive mouse interaction for picking up and placing pieces.

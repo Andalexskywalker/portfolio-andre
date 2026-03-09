@@ -2,6 +2,7 @@ import { About } from "@/components/About";
 import { Hero } from "@/components/Hero";
 import { TechStack } from "@/components/TechStack";
 import { WorkGrid } from "@/components/WorkGrid";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <TechStack />
       <WorkGrid />
       <About />
+      <Contact />
     </main>
   );
 }

@@ -7,7 +7,7 @@ export function WorkGrid() {
             <div className="mb-12 flex flex-col items-center text-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Featured Work</h2>
                 <p className="max-w-[700px] text-lg text-slate-400">
-                    A collection of projects exploring modern web development, cloud infrastructure, and AI.
+                    A selection of my best work across full-stack development, robust infrastructure, and applied AI.
                 </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
