@@ -41,7 +41,7 @@ export function Hero() {
                     </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="gap-2" asChild>
-                    <Link href="/cv_en.pdf" target="_blank">
+                    <Link href="/Andre_Ramos_CV.pdf" target="_blank">
                         <FileText className="h-4 w-4" /> Download CV
                     </Link>
                 </Button>
