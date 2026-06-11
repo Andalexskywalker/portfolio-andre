@@ -34,6 +34,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
                     unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-60" />
+                {project.new && (
+                    <div className="absolute top-3 left-3 shrink-0 z-20">
+                        <Badge variant="default" className="bg-emerald-600 hover:bg-emerald-500 text-white border-none gap-1 shadow-lg backdrop-blur-md font-semibold tracking-wide uppercase text-[10px]">
+                            New
+                        </Badge>
+                    </div>
+                )}
                 {isFeatured && (
                     <div className="absolute top-3 right-3 shrink-0">
                         <Badge variant="default" className="bg-purple-600 hover:bg-purple-500 text-white border-none gap-1 shadow-lg backdrop-blur-md">

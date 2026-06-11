@@ -8,10 +8,152 @@ export interface Project {
     githubUrl?: string;
     demoUrl?: string;
     featured?: boolean;
+    new?: boolean; // Highlight as new project
     content?: string; // Markdown content
 }
 
 export const projects: Project[] = [
+    {
+        slug: "plantsnap",
+        title: "PlantSnap - AI Plant Care",
+        description: "A cloud-native web application that identifies plants using Computer Vision AI, tracks watering schedules in Cosmos DB, and sends email reminders via Azure Functions and Communication Services.",
+        tags: ["FastAPI", "Python", "Azure Cosmos DB", "Azure Functions", "Docker", "Terraform"],
+        thumbnail: "/projects/plantsnap/cover.png",
+        githubUrl: "https://github.com/Andalexskywalker/plantsnap",
+        featured: true,
+        new: true,
+        images: [
+            "/projects/plantsnap/cover.png",
+            "/projects/plantsnap/login-plantsnap.gif",
+            "/projects/plantsnap/identifyplant+guardar.gif",
+            "/projects/plantsnap/jardim-virtual.gif",
+            "/projects/plantsnap/email-notification.gif",
+            "/projects/plantsnap/logout.gif"
+        ],
+        content: `
+![PlantSnap Cover](/projects/plantsnap/cover.png)
+
+**PlantSnap** is an original and modern web application built on the **Microsoft Azure** cloud platform. The app allows users to identify plants from photos using Artificial Intelligence, retrieve detailed watering and care instructions, save plants in a personal virtual garden, and receive automatic watering reminders by email.
+
+This project was developed as a mini-project for the Cloud Computing course and fulfills all assessment requirements.
+
+---
+
+## 🛠️ System Architecture & Services Used
+
+The architecture of **PlantSnap** was designed following principles of scalability, decentralization, and serverless computing:
+
+1. **Frontend (User Experience)**: Responsive, modern Single Page Application (SPA) with a tab-based design (Identify, Garden, Profile). Developed using HTML5, Vanilla CSS3, and JavaScript.
+2. **Backend (Docker Container)**: REST API built with **FastAPI** (Python 3.11). The entire API logic is containerized with Docker and runs on **Azure App Service**.
+3. **Database (CosmosDB)**: NoSQL database (SQL API) to store plant records saved by users (\`userId\`, \`plantName\`, \`watering\`, \`imageUrl\`, etc.) and their notification preferences.
+4. **Cloud Storage (Azure Blob Storage)**: Public binary storage in the \`plant-images\` container to host plant photos uploaded by users.
+5. **Serverless Computing (Azure Function)**: A Python-based timer-triggered function (\`WateringReminder\`) that runs periodically to fetch plant records from CosmosDB and send email notifications.
+6. **Azure Communication Services (ACS)**: Used for automated transactional emails using responsive, premium HTML templates.
+7. **AI & API Integrations**:
+   - **Azure Computer Vision**: Analyzes the image on the backend to verify it is a plant before querying the identification engine.
+   - **Plant.id API & KB**: Identifies the exact plant species, computes confidence scores, and fetches detailed watering data and botanical descriptions.
+
+---
+
+## 🚀 Live Demonstrations
+
+### 1. Authentication & Onboarding
+Users can securely log in to the platform to manage their personal garden.
+![Login and Authentication](/projects/plantsnap/login-plantsnap.gif)
+
+### 2. Plant Identification & Saving
+Using a camera or uploading a photo, the system identifies the plant species and allows the user to save it to their virtual garden.
+![Identification and Saving](/projects/plantsnap/identifyplant+guardar.gif)
+
+### 3. Personal Virtual Garden
+An interactive dashboard displaying all the plants registered by the user with their specific watering schedules.
+![Virtual Garden](/projects/plantsnap/jardim-virtual.gif)
+
+### 4. Email Notifications & Reminders
+Automated, personalized watering alerts with care instructions are delivered directly to the user's email inbox.
+![Email Notification](/projects/plantsnap/email-notification.gif)
+
+### 5. Logout & Preference Management
+Secure session termination and cleanup of cookies. Users can manage their contact preferences at any time in their profile through a dedicated toggle switch to enable/disable automated email watering reminders.
+![Logout and Preferences](/projects/plantsnap/logout.gif)
+
+---
+
+## 🚀 How to Run Locally
+
+### 1. Prerequisites
+- Python 3.11+ installed
+- Docker installed (optional, to test the container image)
+- Environment variables configured in a \`.env\` file in the backend root
+
+### 2. Configure Backend
+Navigate to the \`backend/\` directory and install dependencies:
+\`\`\`bash
+cd backend
+pip install -r requirements.txt
+\`\`\`
+
+Create a \`.env\` file with the required keys:
+\`\`\`env
+COSMOS_ENDPOINT="https://plantsnap-cosmos.documents.azure.com:443/"
+COSMOS_KEY="<your-cosmos-key>"
+COSMOS_DATABASE="plantsnap"
+COSMOS_CONTAINER="plants"
+STORAGE_CONNECTION_STRING="<your-storage-connection-string>"
+STORAGE_CONTAINER="plant-images"
+VISION_ENDPOINT="https://<your-vision-resource>.cognitiveservices.azure.com/"
+VISION_KEY="<your-vision-key>"
+PLANTID_API_KEY="<your-plantid-key>"
+\`\`\`
+
+Start the development server:
+\`\`\`bash
+uvicorn main:app --reload
+\`\`\`
+The application will be available at \`http://localhost:8000/app\`.
+
+### 3. Configure Azure Function
+Navigate to the \`function/\` directory and install dependencies locally for testing:
+\`\`\`bash
+cd function
+pip install -r requirements.txt
+\`\`\`
+Configure the corresponding variables in \`local.settings.json\` and start Azure Functions Core Tools:
+\`\`\`bash
+func start
+\`\`\`
+
+---
+
+## 🤖 Infrastructure Automation (IaC)
+
+The cloud infrastructure for the project can be automatically provisioned in two ways:
+
+### Option A: Terraform (Recommended)
+The entire infrastructure is declared in the \`/terraform\` directory using HCL configuration files.
+1. Install Terraform.
+2. Log in via Azure CLI: \`az login\`.
+3. Navigate to the folder and initialize Terraform:
+   \`\`\`bash
+   cd terraform
+   terraform init
+   \`\`\`
+4. Plan and apply changes:
+   \`\`\`bash
+   terraform plan
+   terraform apply
+   \`\`\`
+
+### Option B: PowerShell Script + Azure CLI / Bicep
+If you prefer imperative scripting or Bicep:
+1. Open a PowerShell console with appropriate permissions.
+2. Run the deployment script located in \`/infrastructure\`:
+   \`\`\`powershell
+   ./infrastructure/deploy.ps1
+   \`\`\`
+   *The script will automatically create the resource group, ACR, CosmosDB, Storage Accounts, App Service, and Function App.*
+`,
+    },
     {
         slug: "cloud-cost-copilot",
         title: "Cloud Cost Copilot",
