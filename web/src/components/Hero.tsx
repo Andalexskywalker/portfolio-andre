@@ -24,8 +24,8 @@ export function Hero() {
                     Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">André</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-lg text-slate-400 md:text-xl">
-                    Software Engineer specializing in robust backend systems and AI integration.
-                    I engineer scalable infrastructure and intelligent solutions for complex problems.
+                    Junior software engineer with a BSc in Informatics Engineering.
+                    I build backend and cloud projects in Python and Java, work with Linux and networking, and I am learning DevOps.
                 </p>
             </motion.div>
 

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code2, Database, Layout, Server, Sparkles } from "lucide-react";
+import { ArrowRight, Code2, Network, Server, Sparkles } from "lucide-react";
 import Image from "next/image";
 
 export function About() {
@@ -20,24 +20,24 @@ export function About() {
                         <Sparkles className="mr-2 h-4 w-4" /> About Me
                     </div>
                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                        Building digital products with intent and precision.
+                        Building and learning, one project at a time.
                     </h2>
                     <p className="text-lg text-slate-400">
-                        I'm a Software Engineer focused on building robust, scalable solutions, with a core specialization in Python and Java.
+                        I&apos;m a junior software engineer with a BSc in Informatics Engineering from the Polytechnic Institute of Castelo Branco. I like building things end to end: backend APIs in Python, cloud deployments on Azure with Docker and Terraform, and how systems talk to each other over a network.
                         <br />
                         <br />
-                        I bridge the gap between complex backend logic and efficient deployment, ensuring every system runs optimally. My expertise extends to server management (Apache, Nginx) and containerization with Docker for improved organization and performance.
+                        My final project used deep learning to predict satellite collision risk from ESA data. I also build with AI tools, and I say so: some projects here were written with AI assistance, and each project page explains which parts are mine.
                         <br />
                         <br />
-                        Beyond traditional coding, I have a deep curiosity for Artificial Intelligence, using it to exponentially enhance my ideas and projects. I am also actively expanding my knowledge in Cloud Computing to design even more resilient architectures.
+                        This website was designed with AI assistance. The deployment and the infrastructure on Cloudflare are my own work.
                         <br />
                         <br />
-                        While I still build creative applications, my passion lies in engineering the powerful engines that drive them.
+                        I am looking for a junior role in software engineering, cloud or DevOps, where I can keep learning from experienced engineers.
                     </p>
 
                     <div className="flex flex-wrap gap-3">
                         <Button variant="outline" className="gap-2 w-full sm:w-auto" asChild>
-                            <a href="/cv_en.pdf" target="_blank">
+                            <a href="/Andre_Ramos_CV.pdf" target="_blank">
                                 Download CV <ArrowRight className="h-4 w-4" />
                             </a>
                         </Button>
@@ -59,11 +59,11 @@ export function About() {
                         <div className="h-full w-full rounded-xl bg-slate-950/50 p-6 flex flex-col justify-center gap-6 border border-white/5">
                             <div className="flex items-center gap-4">
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400">
-                                    <Layout className="h-6 w-6" />
+                                    <Network className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-white">Frontend</h4>
-                                    <p className="text-sm text-slate-400">React, Next.js</p>
+                                    <h4 className="font-semibold text-white">Linux &amp; Networking</h4>
+                                    <p className="text-sm text-slate-400">WSL2, WireGuard, ufw, tcpdump</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
@@ -80,8 +80,8 @@ export function About() {
                                     <Server className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-white">Infrastructure</h4>
-                                    <p className="text-sm text-slate-400">Docker, Nginx, Apache</p>
+                                    <h4 className="font-semibold text-white">Cloud &amp; DevOps</h4>
+                                    <p className="text-sm text-slate-400">Azure, Docker, Terraform</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
@@ -89,8 +89,8 @@ export function About() {
                                     <Sparkles className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-white">AI & Cloud</h4>
-                                    <p className="text-sm text-slate-400">LLMs, Agents, RAG</p>
+                                    <h4 className="font-semibold text-white">Data &amp; AI</h4>
+                                    <p className="text-sm text-slate-400">Keras, pandas, LLM APIs</p>
                                 </div>
                             </div>
                         </div>

@@ -1,16 +1,16 @@
-import { Blocks, Braces, Cloud, Code, Database, Globe, LayoutTemplate, Network, Server, Terminal, Wrench } from "lucide-react";
+import { Blocks, Braces, Cloud, Code, Database, Network, Server, Sparkles, Terminal, Wrench } from "lucide-react";
 
 export function TechStack() {
     const techs = [
-        { name: "Next.js", icon: Globe },
-        { name: "React", icon: LayoutTemplate },
-        { name: "TypeScript", icon: Braces },
-        { name: "AI Integration", icon: Network },
         { name: "Python", icon: Terminal },
         { name: "FastAPI", icon: Blocks },
         { name: "Java", icon: Code },
-        { name: "PostgreSQL", icon: Database },
+        { name: "SQL / NoSQL", icon: Database },
+        { name: "Azure", icon: Cloud },
         { name: "Docker", icon: Server },
+        { name: "Terraform", icon: Braces },
+        { name: "Linux & Networking", icon: Network },
+        { name: "Keras / TensorFlow", icon: Sparkles },
         { name: "Git", icon: Wrench },
     ];
 

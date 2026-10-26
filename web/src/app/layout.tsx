@@ -8,20 +8,20 @@ import { Footer } from "@/components/Footer";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "André | Software Engineer",
-  description: "Software Engineer specializing in backend architecture, intelligent systems, and scalable infrastructure.",
+  title: "André Ramos | Junior Software Engineer",
+  description: "Junior software engineer: Python, Java, Azure, Docker and Linux.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://andre-ramos.dev/",
-    title: "André | Software Engineer",
-    description: "Specializing in Python, Java, Docker, and AI Integration.",
+    title: "André Ramos | Junior Software Engineer",
+    description: "Python, Java, Azure, Docker and Linux projects.",
     siteName: "André Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "André | Software Engineer",
-    description: "Specializing in Python, Java, Docker, and AI Integration.",
+    title: "André Ramos | Junior Software Engineer",
+    description: "Python, Java, Azure, Docker and Linux projects.",
   },
 };
 
