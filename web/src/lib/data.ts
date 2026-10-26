@@ -158,7 +158,11 @@ Users can turn the email reminders on or off in their profile.
 
 ## Infrastructure as code
 
-The Azure infrastructure is declared in **Terraform**. After the course I extended the repository **with AI assistance**: parameterized queries, private image storage, Terraform with remote state, Key Vault with managed identities, GitHub Actions workflows, Kubernetes manifests and Prometheus/Grafana monitoring. The CI checks pass, but the Key Vault, deployment and Kubernetes parts are written and validated, not yet run end to end against my Azure account, so treat them as work in progress.
+The Azure infrastructure is declared in **Terraform**. After the course I extended the repository **with AI assistance**: parameterized queries, private image storage, Terraform with remote state, Key Vault with managed identities, GitHub Actions workflows, Kubernetes manifests and Prometheus/Grafana monitoring. The automated checks pass, but these additions were never deployed to Azure.
+
+## Status: no live demo
+
+The app ran on my university's Azure subscription, which no longer exists, so there is no live deployment. The GIFs above were recorded while it was running.
     `,
     },
     {
