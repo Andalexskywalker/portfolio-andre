@@ -23,7 +23,7 @@ export function About() {
                         Building and learning, one project at a time.
                     </h2>
                     <p className="text-lg text-slate-400">
-                        I&apos;m a junior software engineer with a BSc in Informatics Engineering from the Polytechnic Institute of Castelo Branco. I like building things end to end: backend APIs in Python, cloud deployments on Azure with Docker and Terraform, and how systems talk to each other over a network.
+                        I&apos;m a junior software engineer with a BSc in Informatics Engineering from the Polytechnic Institute of Castelo Branco. I like building things end to end: backend APIs in Python, cloud deployments on Azure with Docker and Terraform, and how systems talk to each other over a network. At university I put websites online on virtual machines with Apache, Nginx and DNS names, and later built a small WireGuard and firewall lab.
                         <br />
                         <br />
                         My final project used deep learning to predict satellite collision risk from ESA data. I also build with AI tools, and I say so: some projects here were written with AI assistance, and each project page explains which parts are mine.
@@ -63,7 +63,7 @@ export function About() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white">Linux &amp; Networking</h4>
-                                    <p className="text-sm text-slate-400">WSL2, WireGuard, ufw, tcpdump</p>
+                                    <p className="text-sm text-slate-400">Apache, Nginx, DNS, WireGuard, ufw</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">

@@ -10,6 +10,7 @@ export function TechStack() {
         { name: "Docker", icon: Server },
         { name: "Terraform", icon: Braces },
         { name: "Linux & Networking", icon: Network },
+        { name: "Apache / Nginx", icon: Server },
         { name: "Keras / TensorFlow", icon: Sparkles },
         { name: "Git", icon: Wrench },
     ];
